@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>测试一下，马上出发!</title>
+</head>
+
+<body>
+    <input type="text" value="10秒" name="chart" id="chart">
+    <input type="button" value="点击跳转海边直播" onclick="count()" >
+    <script language="JavaScript">
+        var bar = 10
+//        count()
+        function count(){
+            bar = bar - 1
+//            document.getElementsByTagName("chart")[0].value = 4 + "秒"
+            document.getElementById("chart").value = bar + "%"
+            if (bar > 0){
+              setTimeout("count()",1000);
+            }
+            else{
+//                window.location = "http://www.baidu.com"
+                window.location = "HBLive://"
+            }
+        }
+
+
+
+
+    </script>
+    <!--<script language="JavaScript"> document.location = "http://www.baidu.com"-->
+    <!--</script>-->
+    <!--<script language="JavaScript"> document.location = "http://www.qq.com"-->
+    <!--</script>-->
+</body>
+</html>
